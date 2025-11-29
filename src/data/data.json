@@ -4,5 +4,14 @@
     { "no": 1, "task": "Assignment 1", "course": "Course 1", "status": "In Progress" },
     { "no": 2, "task": "Assignment 2", "course": "Course 2", "status": "Not Started" },
     { "no": 3, "task": "Assignment 3", "course": "Course 3", "status": "In Progress" }
+  ],
+  "forums": [
+    { "postedBy": "Jane Cooper", "forumTitle": "Do birds fly?" },
+    { "postedBy": "Kristin Watson", "forumTitle": "Help on Math Equation!" },
+    { "postedBy": "Jenny Wilson", "forumTitle": "Chemical Mixture?" },
+    { "postedBy": "Brookly Sim", "forumTitle": "Proper structure on load?" },
+    { "postedBy": "Nicole Wilson", "forumTitle": "RNA and DNA Comparsion" },
+    { "postedBy": "Smack  Steward", "forumTitle": "Best Programming Language" },
+    { "postedBy": "JJ Peculiar", "forumTitle": "Are Dinosaurs Real?" }
   ]
 }

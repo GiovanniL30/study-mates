@@ -7,7 +7,9 @@ interface CardProps {
 }
 
 const Card = ({ className, children }: CardProps) => {
-  return <div className={merge("bg-white p-3 rounded-md", className)}>{children}</div>;
+  const hasBg = className?.includes("bg-");
+
+  return <div className={merge(hasBg ? "" : "bg-white", "p-3 rounded-md", className)}>{children}</div>;
 };
 
 export default Card;
