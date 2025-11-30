@@ -49,7 +49,7 @@ const Dashboard = () => {
             })}
           </div>
         </Card>
-        //Gawan ng sariling component yung mga card dito pag sinipag
+        {/* Create own card components for this grid pag sinipag */}
         <Card className="col-start-2 col-end-3 row-start-5 row-end-7 ">
           <div className="grid grid-cols-2 grid-rows-2 place-items-center h-full gap-2">
             <Card className="flex flex-col items-center shadow w-full">

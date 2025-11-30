@@ -14,36 +14,40 @@ interface CourseCardProps {
 
 const CourseCard = ({ image, categories, title, teacher }: CourseCardProps) => {
   return (
-    <Card className="flex flex-col gap-2">
-      <img src={image} alt="Course Thumbnail" />
-      <div className="flex">
+    <Card className="flex flex-col gap-2 hover:bg-gray-300  transition-all">
+      <img className="rounded" src={image} alt="Course Thumbnail" />
+      <div className="flex gap-1">
         {categories.map((category, i) => {
-          return <div key={i}>{category}</div>;
+          return (
+            <div key={i} className="text-xs font-extralight bg-gray-100 px-2 py-0.5 rounded-full">
+              {category}
+            </div>
+          );
         })}
       </div>
-      <h1>{title}</h1>
+      <h1 className="font-semibold text-xl">{title}</h1>
       <div className="flex justify-between">
-        <div className="flex gap-2">
+        <div className="flex items-center gap-1">
           <GoPersonFill />
-          <h2>{teacher}</h2>
+          <h2 className="text-md font-light text-gray-500">{teacher}</h2>
         </div>
-        <div className="flex gap-2">
-          <FaStar />
-          <span>48 Reviews</span>
+        <div className="flex items-center gap-1">
+          <FaStar color="#f8bc24" />
+          <span className="text-md font-light text-gray-500">48 Reviews</span>
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="flex gap-1">
+        <div className="flex items-center gap-1">
           <FaBook />
-          <span>05</span>
+          <span className="text-md font-light text-gray-500">05</span>
         </div>
-        <div className="flex gap-1">
+        <div className="flex items-center gap-1">
           <CiClock2 />
-          <span>12H 30M</span>
+          <span className="text-md font-light text-gray-500">12H 30M</span>
         </div>
-        <div className="flex gap-1">
+        <div className="flex items-center gap-1">
           <FaGraduationCap />
-          <span>22</span>
+          <span className="text-md font-light text-gray-500">22</span>
         </div>
       </div>
     </Card>

@@ -13,5 +13,13 @@
     { "postedBy": "Nicole Wilson", "forumTitle": "RNA and DNA Comparsion" },
     { "postedBy": "Smack  Steward", "forumTitle": "Best Programming Language" },
     { "postedBy": "JJ Peculiar", "forumTitle": "Are Dinosaurs Real?" }
+  ],
+  "courses": [
+    { "categories": ["Development", "AI"], "title": "Prompt Engineering", "teacher": "Sam Millar" },
+    { "categories": ["Development", "Programming"], "title": "Laravel Crash Course", "teacher": "Robert Fox" },
+    { "categories": ["Marketing"], "title": "Marketing Basics", "teacher": "Maria Gosling" },
+    { "categories": ["Finance"], "title": "100 Steps to Finance", "teacher": "Jak Roberto" },
+    { "categories": ["User Design"], "title": "UI vs UX Importance", "teacher": "Kelly McMillan" },
+    { "categories": ["Data", "Python"], "title": "Data in Modern Society", "teacher": "Rose Cruz" }
   ]
 }
