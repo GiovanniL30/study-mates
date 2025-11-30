@@ -14,7 +14,7 @@ interface CourseCardProps {
 
 const CourseCard = ({ image, categories, title, teacher }: CourseCardProps) => {
   return (
-    <Card className="flex flex-col gap-2 hover:bg-gray-300  transition-all">
+    <Card className="flex flex-col gap-2 hover:bg-gray-300 transition-all border border-gray-100 shadow">
       <img className="rounded" src={image} alt="Course Thumbnail" />
       <div className="flex gap-1">
         {categories.map((category, i) => {

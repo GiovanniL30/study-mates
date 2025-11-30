@@ -15,11 +15,16 @@
     { "postedBy": "JJ Peculiar", "forumTitle": "Are Dinosaurs Real?" }
   ],
   "courses": [
-    { "categories": ["Development", "AI"], "title": "Prompt Engineering", "teacher": "Sam Millar" },
-    { "categories": ["Development", "Programming"], "title": "Laravel Crash Course", "teacher": "Robert Fox" },
-    { "categories": ["Marketing"], "title": "Marketing Basics", "teacher": "Maria Gosling" },
-    { "categories": ["Finance"], "title": "100 Steps to Finance", "teacher": "Jak Roberto" },
-    { "categories": ["User Design"], "title": "UI vs UX Importance", "teacher": "Kelly McMillan" },
-    { "categories": ["Data", "Python"], "title": "Data in Modern Society", "teacher": "Rose Cruz" }
+    { "id": "course1", "categories": ["Development", "AI"], "title": "Prompt Engineering", "teacher": "Sam Millar" },
+    {
+      "id": "course2",
+      "categories": ["Development", "Programming"],
+      "title": "Laravel Crash Course",
+      "teacher": "Robert Fox"
+    },
+    { "id": "course3", "categories": ["Marketing"], "title": "Marketing Basics", "teacher": "Maria Gosling" },
+    { "id": "course4", "categories": ["Finance"], "title": "100 Steps to Finance", "teacher": "Jak Roberto" },
+    { "id": "course5", "categories": ["User Design"], "title": "UI vs UX Importance", "teacher": "Kelly McMillan" },
+    { "id": "course6", "categories": ["Data", "Python"], "title": "Data in Modern Society", "teacher": "Rose Cruz" }
   ]
 }
