@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoMdBook } from "react-icons/io";
 import { FaArrowDown } from "react-icons/fa";
+import { MdArrowRight } from "react-icons/md";
 
 interface CourseRowProps {
   children?: React.ReactNode;
@@ -21,7 +22,7 @@ export const CourseRow = ({ children, title }: CourseRowProps) => {
           <div className="flex flex-col">
             <h1 className="font-bold text-lg">Lesson 1 for {title}</h1>
             <p className=" text-md font-extralight max-w-[700px]">
-              The description for the lessons for a course is written here.
+              The description for the lesson of a course is written here.
             </p>
           </div>
         </div>
@@ -33,11 +34,18 @@ export const CourseRow = ({ children, title }: CourseRowProps) => {
           <FaArrowDown className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
         </div>
       </div>
-      {open && <CourseRowContent>{open && children}</CourseRowContent>}
+      {open && <div>{children}</div>}
     </div>
   );
 };
 
 export const CourseRowContent = ({ children }: CourseRowContentProps) => {
-  return <div className="pl-18 pb-3 font-extralight">{children}</div>;
+  return (
+    <div className="pl-18 pb-3 font-extralight flex flex-col w-fit hover:text-red-500">
+      <div className="flex items-center">
+        <MdArrowRight size={24} />
+        {children}
+      </div>
+    </div>
+  );
 };

@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import courses from "@/lib/getCourseData";
 import { CiClock1 } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
-import { CourseRow } from "@/components/ui/CourseRow";
+import { CourseRow, CourseRowContent } from "@/components/ui/CourseRow";
+import { MdArrowRight } from "react-icons/md";
 
 const SelectedCourse = () => {
   const { courseId } = useParams<{ courseId: string }>();
@@ -32,7 +33,16 @@ const SelectedCourse = () => {
         </div>
         <div className="flex flex-col gap-2">
           <CourseRow title={selectedCourse?.title}>
-            <span>Test</span>
+            <CourseRowContent>
+              <Link to={"/"}>
+                <span>Click to start reading</span>
+              </Link>
+            </CourseRowContent>
+            <CourseRowContent>
+              <Link to={"/"}>
+                <span>Finished Reading? Take the Acvity!</span>
+              </Link>
+            </CourseRowContent>
           </CourseRow>
         </div>
       </div>
