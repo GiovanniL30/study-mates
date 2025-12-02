@@ -15,16 +15,49 @@
     { "postedBy": "JJ Peculiar", "forumTitle": "Are Dinosaurs Real?" }
   ],
   "courses": [
-    { "id": "course1", "categories": ["Development", "AI"], "title": "Prompt Engineering", "teacher": "Sam Millar" },
     {
-      "id": "course2",
+      "courseId": "course1",
+      "categories": ["Development", "AI"],
+      "title": "Prompt Engineering",
+      "teacher": "Sam Millar"
+    },
+    {
+      "courseId": "course2",
       "categories": ["Development", "Programming"],
       "title": "Laravel Crash Course",
       "teacher": "Robert Fox"
     },
-    { "id": "course3", "categories": ["Marketing"], "title": "Marketing Basics", "teacher": "Maria Gosling" },
-    { "id": "course4", "categories": ["Finance"], "title": "100 Steps to Finance", "teacher": "Jak Roberto" },
-    { "id": "course5", "categories": ["User Design"], "title": "UI vs UX Importance", "teacher": "Kelly McMillan" },
-    { "id": "course6", "categories": ["Data", "Python"], "title": "Data in Modern Society", "teacher": "Rose Cruz" }
+    { "courseId": "course3", "categories": ["Marketing"], "title": "Marketing Basics", "teacher": "Maria Gosling" },
+    { "courseId": "course4", "categories": ["Finance"], "title": "100 Steps to Finance", "teacher": "Jak Roberto" },
+    {
+      "courseId": "course5",
+      "categories": ["User Design"],
+      "title": "UI vs UX Importance",
+      "teacher": "Kelly McMillan"
+    },
+    {
+      "courseId": "course6",
+      "categories": ["Data", "Python"],
+      "title": "Data in Modern Society",
+      "teacher": "Rose Cruz"
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "id": "course1",
+      "questions": [
+        {
+          "questionId": "qc1",
+          "question": "Do birds fly?",
+          "answer": "qc1c1",
+          "choices": [
+            { "choiceId": "qc1c1", "choice": "Yes" },
+            { "choiceId": "qc2c1", "choice": "No" },
+            { "choiceId": "qc3c1", "choice": "Maybe" }
+          ]
+        }
+      ]
+    }
   ]
 }
