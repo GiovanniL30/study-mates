@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 interface CourseRowProps {
   children?: React.ReactNode;
-  title: string;
+  title: string | undefined;
 }
 
 interface CourseRowContentProps {
@@ -14,16 +14,14 @@ interface CourseRowContentProps {
 export const CourseRow = ({ children, title }: CourseRowProps) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex flex-col gap-4 bg-gray-200 rounded-md">
+    <div className="flex flex-col gap-2 bg-gray-100 rounded-md">
       <div className="flex justify-between items-center p-2 rounded-md">
         <div className="flex items-center gap-4">
           <IoMdBook size={48} />
           <div className="flex flex-col">
-            <h1 className="font-bold">Lesson 1 for {title}</h1>
+            <h1 className="font-bold text-lg">Lesson 1 for {title}</h1>
             <p className=" text-md font-extralight max-w-[700px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit cumque provident eveniet! Unde
-              quas temporibus vitae ullam perferendis suscipit officiis est nemo aliquid tenetur? Enim libero eligendi
-              asperiores officia?
+              The description for the lessons for a course is written here.
             </p>
           </div>
         </div>
@@ -35,13 +33,11 @@ export const CourseRow = ({ children, title }: CourseRowProps) => {
           <FaArrowDown className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
         </div>
       </div>
-      <div className={`transition-all duration-300 overflow-hidden ${open ? "max-h-[500px]" : "max-h-0"}`}>
-        {open && children}
-      </div>
+      {open && <CourseRowContent>{open && children}</CourseRowContent>}
     </div>
   );
 };
 
 export const CourseRowContent = ({ children }: CourseRowContentProps) => {
-  return <div>{children}</div>;
+  return <div className="pl-18 pb-3 font-extralight">{children}</div>;
 };

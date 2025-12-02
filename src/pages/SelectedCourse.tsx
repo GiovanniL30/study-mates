@@ -10,17 +10,13 @@ const SelectedCourse = () => {
 
   return (
     <>
-      <div className="bg-white py-6 px-8 mx-18 flex flex-col gap-2 rounded-md">
+      <div className="bg-white w-[75%] px-4 py-2 flex flex-col gap-2 rounded-md">
         <div className="flex gap-4 items-center">
           <img className="rounded w-[300px] h-[200px]" src={selectedCourse?.image} alt="Course Picture" />
           <div className="flex flex-col gap-2">
             <h1 className="text-2xl font-bold">{selectedCourse?.title}</h1>
             <p className="font-extralight max-w-[600px]">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
+              The description for the course {selectedCourse?.title} is written here.
             </p>
             <div className="flex gap-4">
               <div className="flex gap-0.5 items-center">
@@ -35,9 +31,9 @@ const SelectedCourse = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <CourseRow title={"Test"}> Test</CourseRow>
-          <CourseRow title={"Test"}> Test</CourseRow>
-          <CourseRow title={"Test"}> Test</CourseRow>
+          <CourseRow title={selectedCourse?.title}>
+            <span>Test</span>
+          </CourseRow>
         </div>
       </div>
     </>
