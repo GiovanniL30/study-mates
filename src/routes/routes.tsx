@@ -8,6 +8,8 @@ import Courses from "@/pages/Courses";
 import Chat from "@/pages/Chat";
 import Settings from "@/pages/Settings";
 import SelectedCourse from "@/pages/SelectedCourse";
+import SelectedCourseLesson from "@/pages/SelectedCourseLesson";
+import SelectedCourseActivity from "@/pages/SelectedCourseActivity";
 
 export const routes = [
   { path: "/", element: <Login /> },
@@ -26,6 +28,10 @@ export const routes = [
   {
     path: "/c",
     element: <CourseLayout />,
-    children: [{ path: ":courseId", element: <SelectedCourse /> }],
+    children: [
+      { path: ":courseId", element: <SelectedCourse /> },
+      { path: "l/:lessonId", element: <SelectedCourseLesson /> },
+      { path: "a/:activityId", element: <SelectedCourseActivity /> },
+    ],
   },
 ];

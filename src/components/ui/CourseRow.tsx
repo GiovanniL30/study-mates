@@ -5,14 +5,15 @@ import { MdArrowRight } from "react-icons/md";
 
 interface CourseRowProps {
   children?: React.ReactNode;
-  title: string | undefined;
+  title: string;
+  description: string;
 }
 
 interface CourseRowContentProps {
   children: React.ReactNode;
 }
 
-export const CourseRow = ({ children, title }: CourseRowProps) => {
+export const CourseRow = ({ children, title, description }: CourseRowProps) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="flex flex-col gap-2 bg-gray-100 rounded-md">
@@ -20,10 +21,8 @@ export const CourseRow = ({ children, title }: CourseRowProps) => {
         <div className="flex items-center gap-4">
           <IoMdBook size={48} />
           <div className="flex flex-col">
-            <h1 className="font-bold text-lg">Lesson 1 for {title}</h1>
-            <p className=" text-md font-extralight max-w-[700px]">
-              The description for the lesson of a course is written here.
-            </p>
+            <h1 className="font-bold text-lg">{title}</h1>
+            <p className=" text-md font-extralight max-w-[700px]">{description}</p>
           </div>
         </div>
         <div

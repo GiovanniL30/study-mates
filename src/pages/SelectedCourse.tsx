@@ -3,11 +3,9 @@ import courses from "@/lib/getCourseData";
 import { CiClock1 } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { CourseRow, CourseRowContent } from "@/components/ui/CourseRow";
-import { MdArrowRight } from "react-icons/md";
-
 const SelectedCourse = () => {
   const { courseId } = useParams<{ courseId: string }>();
-  const selectedCourse = courses.find((course) => course.id === courseId);
+  const selectedCourse = courses.find((course) => course.courseId === courseId)!;
 
   return (
     <>
@@ -32,18 +30,22 @@ const SelectedCourse = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <CourseRow title={selectedCourse?.title}>
-            <CourseRowContent>
-              <Link to={"/"}>
-                <span>Click to start reading</span>
-              </Link>
-            </CourseRowContent>
-            <CourseRowContent>
-              <Link to={"/"}>
-                <span>Finished Reading? Take the Acvity!</span>
-              </Link>
-            </CourseRowContent>
-          </CourseRow>
+          {selectedCourse.lessons.map((lesson, i) => {
+            return (
+              <CourseRow key={lesson.lessonId} title={`Lesson  ${i + 1} `} description={lesson.lessonDescription}>
+                <CourseRowContent>
+                  <Link to={`/c/${courseId}/l/${lesson.lessonId}`}>
+                    <span>Click to start reading</span>
+                  </Link>
+                </CourseRowContent>
+                <CourseRowContent>
+                  <Link to={`/c/${courseId}/a/${lesson.activity.activityId}`}>
+                    <span>Finished Reading? Take the Acvity!</span>
+                  </Link>
+                </CourseRowContent>
+              </CourseRow>
+            );
+          })}
         </div>
       </div>
     </>

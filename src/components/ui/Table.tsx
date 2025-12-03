@@ -1,4 +1,4 @@
-import React, { type HtmlHTMLAttributes } from "react";
+import { type HtmlHTMLAttributes } from "react";
 import merge from "@/lib/merge";
 
 interface TableProps extends HtmlHTMLAttributes<HTMLTableElement> {
