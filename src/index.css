@@ -3,4 +3,7 @@
 @theme {
   --color-login: #487a89;
   --color-background: #f5f4f9;
+  --color-q-header: #1e293b;
+  --color-q-body: #334155;
+  --color-q-select: #a3e635;
 }

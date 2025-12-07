@@ -9,7 +9,7 @@ import Chat from "@/pages/Chat";
 import Settings from "@/pages/Settings";
 import SelectedCourse from "@/pages/SelectedCourse";
 import SelectedCourseLesson from "@/pages/SelectedCourseLesson";
-// import SelectedCourseActivity from "@/pages/SelectedCourseActivity";
+import SelectedCourseActivity from "@/pages/SelectedCourseActivity";
 
 export const routes = [
   { path: "/", element: <Login /> },
@@ -31,7 +31,7 @@ export const routes = [
     children: [
       { path: ":courseId", element: <SelectedCourse /> },
       { path: ":courseId/l/:lessonId", element: <SelectedCourseLesson /> },
-      // { path: ":courseId/a/:activityId", element: <SelectedCourseActivity /> },
+      { path: ":courseId/a/:activityId", element: <SelectedCourseActivity /> },
     ],
   },
 ];
