@@ -20,27 +20,11 @@ const Login = () => {
             </div>
             <div className="flex flex-col items-start gap-3 w-full">
               <h1 className="text-login font-bold text-4xl">Login</h1>
-              <Input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                type="text"
-                label={"Email Address"}
-                placeholder="eg: 123456@slu.edu.ph"
-              />
-              <Input
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                type="password"
-                label={"Password"}
-                placeholder="eg: bleach123"
-              />
+              <Input value={email} onChange={(e) => setEmail(e.target.value)} type="text" label={"Email Address"} placeholder="eg: 123456@slu.edu.ph" />
+              <Input value={password} onChange={(e) => setPassword(e.target.value)} type="password" label={"Password"} placeholder="eg: bleach123" />
               <div className="w-full flex justify-center pt-2">
                 <Link to={"/main"}>
-                  <Button
-                    onClick={() => console.log("Clicked")}
-                    className="bg-login hover:bg-blue-300"
-                    label={"Login"}
-                  />
+                  <Button onClick={() => console.log("Clicked")} className="bg-login hover:bg-blue-300 hover:cursor-pointer" label={"Login"} />
                 </Link>
               </div>
               <span className="text-xs">

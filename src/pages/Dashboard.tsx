@@ -25,10 +25,7 @@ const Dashboard = () => {
         <Card className="col-start-1 col-end-3 row-start-1 row-end-3 flex justify-between items-center">
           <div className="flex flex-col gap-2 w-[50%]">
             <h1 className="font-semibold text-3xl">Hey Student!</h1>
-            <p className="font-extralight">
-              Welcome back! We're here to support you on your learning journey. Dive into your classes and keep
-              progressing towards your goals.
-            </p>
+            <p className="font-extralight">Welcome back! We're here to support you on your learning journey. Dive into your classes and keep progressing towards your goals.</p>
           </div>
           <span>Image Here</span>
         </Card>

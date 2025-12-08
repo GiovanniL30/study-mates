@@ -14,9 +14,7 @@ const SelectedCourse = () => {
           <img className="rounded w-[300px] h-[200px]" src={selectedCourse?.image} alt="Course Picture" />
           <div className="flex flex-col gap-2">
             <h1 className="text-2xl font-bold">{selectedCourse?.title}</h1>
-            <p className="font-extralight max-w-[600px]">
-              The description for the course {selectedCourse?.title} is written here.
-            </p>
+            <p className="font-extralight max-w-[600px]">The description for the course {selectedCourse?.title} is written here.</p>
             <div className="flex gap-4">
               <div className="flex gap-0.5 items-center">
                 <CiClock1 />

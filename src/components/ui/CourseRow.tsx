@@ -25,10 +25,7 @@ export const CourseRow = ({ children, title, description }: CourseRowProps) => {
             <p className=" text-md font-extralight max-w-[700px]">{description}</p>
           </div>
         </div>
-        <div
-          onClick={() => setOpen((prev) => !prev)}
-          className="flex gap-2 items-center hover:cursor-pointer select-none"
-        >
+        <div onClick={() => setOpen((prev) => !prev)} className="flex gap-2 items-center hover:cursor-pointer select-none">
           <span className="text-md font-extralight">{open ? "Collapse" : "Expand"}</span>
           <FaArrowDown className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
         </div>

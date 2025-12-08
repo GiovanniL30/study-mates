@@ -24,12 +24,7 @@ const Sidebar = ({ links, current, className }: SidebarProps) => {
       {links?.map((link) => {
         return (
           <Link key={link.url} to={link.url}>
-            <div
-              className={merge(
-                "flex items-center px-2 py-1 gap-2 rounded-xl hover:bg-gray-300 hover:text-black",
-                current?.pathname === link.url ? "bg-white text-black" : ""
-              )}
-            >
+            <div className={merge("flex items-center px-2 py-1 gap-2 rounded-xl hover:bg-gray-300 hover:text-black", current?.pathname === link.url ? "bg-white text-black" : "")}>
               {link.icon}
               <span className="font-light text-lg">{link.label}</span>
             </div>

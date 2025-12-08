@@ -10,12 +10,7 @@ const Courses = () => {
         {courses.map((course, i) => {
           return (
             <Link key={i} className="bg-white rounded-md" to={`/c/${course.courseId}`}>
-              <CourseCard
-                image={course.image}
-                categories={course.categories}
-                title={course.title}
-                teacher={course.teacher}
-              />
+              <CourseCard image={course.image} categories={course.categories} title={course.title} teacher={course.teacher} />
             </Link>
           );
         })}

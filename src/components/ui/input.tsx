@@ -15,20 +15,14 @@ const Input = ({ label, className, placeholder, ...props }: InputProps) => {
           <label className="text-xs">{label}</label>
           <input
             {...props}
-            className={merge(
-              "bg-white px-2 py-3 text-sm text-login focus:outline-none focus:border-l-4 focus:border-login transition-all duration-75 ease-in-out",
-              className
-            )}
+            className={merge("bg-white px-2 py-3 text-sm text-login focus:outline-none focus:border-l-4 focus:border-login transition-all duration-75 ease-in-out", className)}
             placeholder={placeholder}
           />
         </div>
       ) : (
         <input
           {...props}
-          className={merge(
-            "px-2 py-3 text-sm text-login focus:outline-none focus:border-l-4 focus:border-login transition-all duration-75 ease-in-out",
-            className
-          )}
+          className={merge("px-2 py-3 text-sm text-login focus:outline-none focus:border-l-4 focus:border-login transition-all duration-75 ease-in-out", className)}
           placeholder={placeholder}
         />
       )}
