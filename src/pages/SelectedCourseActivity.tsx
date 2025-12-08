@@ -19,8 +19,8 @@ const SelectedCourseActivity = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 w-full mt-4">
-      <div className="col-start-1 col-end-2">
+    <div className="grid grid-cols-4 mt-4 w-[80%]">
+      <div className="col-span-1">
         <div className="flex flex-col gap-2 items-center">
           <div className="flex flex-col items-center gap-0.5">
             <span>Progress Bar</span>
@@ -28,32 +28,36 @@ const SelectedCourseActivity = () => {
             <span>{questions.length - selectedAnswersId.length} Question Remaning</span>
           </div>
           <Button
-            disabled={selectedAnswersId.length !== questions.length}
+            disabled={answersSubmitted || selectedAnswersId.length !== questions.length}
             onClick={submitAnswers}
             className={merge(
               "bg-login",
               selectedAnswersId.length !== questions.length ? "opacity-50 hover:cursor-not-allowed" : "hover:cursor-pointer"
             )}
-            label="End Quiz"
+            label={answersSubmitted ? "Submitted" : "End Quiz"}
           />
         </div>
       </div>
-      <div className="col-start-2 col-end-4 flex flex-col gap-4">
-        {questions.map((question, i) => {
-          return (
-            <QuestionCard
-              key={question.questionId}
-              answerSubmitted={answersSubmitted}
-              answerId={question.answer}
-              questionNumber={`${i + 1}`}
-              question={question.question}
-              questionId={question.questionId}
-              questionChoices={question.choices}
-              selectedAnswer={selectedAnswersId}
-              setSelectedAnswer={setSelectedAnswersId}
-            ></QuestionCard>
-          );
-        })}
+      <div className="col-span-3">
+        <div className="flex flex-col gap-4">
+          {questions.map((question, i) => {
+            const answerName = question.choices.find((choice) => choice.choiceId === question.answer);
+            return (
+              <QuestionCard
+                key={question.questionId}
+                answerSubmitted={answersSubmitted}
+                answerId={question.answer}
+                answerName={answerName?.choice}
+                questionNumber={`${i + 1}`}
+                question={question.question}
+                questionId={question.questionId}
+                questionChoices={question.choices}
+                selectedAnswer={selectedAnswersId}
+                setSelectedAnswer={setSelectedAnswersId}
+              ></QuestionCard>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
