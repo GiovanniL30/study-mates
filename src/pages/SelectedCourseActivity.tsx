@@ -14,6 +14,12 @@ const SelectedCourseActivity = () => {
   const selectedLesson = selectedCourse?.lessons.find((lesson) => lesson.activity.activityId === activityId);
   const questions = selectedLesson?.activity.questions ?? [];
 
+  const getAnswers = selectedAnswersId.map((answer) =>
+    questions.some((question) => answer.questionId === question.questionId && answer.choiceId === question.answer)
+  );
+  const correctAnswers = getAnswers.filter((answer) => answer === true);
+  const wrongAnswers = getAnswers.filter((answer) => answer !== true);
+
   const submitAnswers = () => {
     setAnswersSubmitted(true);
   };
@@ -23,9 +29,9 @@ const SelectedCourseActivity = () => {
       <div className="col-span-1">
         <div className="flex flex-col gap-2 items-center">
           <div className="flex flex-col items-center gap-0.5">
-            <span>Progress Bar</span>
-            <span>{selectedAnswersId.length} Question Answered</span>
-            <span>{questions.length - selectedAnswersId.length} Question Remaning</span>
+            <span className="font-bold">Quiz Progress</span>
+            <span className="font-light">{selectedAnswersId.length} Question Answered</span>
+            <span className="font-light">{questions.length - selectedAnswersId.length} Question Remaning</span>
           </div>
           <Button
             disabled={answersSubmitted || selectedAnswersId.length !== questions.length}
@@ -36,6 +42,16 @@ const SelectedCourseActivity = () => {
             )}
             label={answersSubmitted ? "Submitted" : "End Quiz"}
           />
+          {answersSubmitted && (
+            <div className="flex flex-col items-center gap-0.5">
+              <span className="font-bold">Quiz Summary</span>
+              <span className="font-light">
+                Score: {correctAnswers.length} / {questions.length}
+              </span>
+              <span className="font-light">{correctAnswers.length} Question Correct</span>
+              <span className="font-light">{wrongAnswers.length} Question Incorrect</span>
+            </div>
+          )}
         </div>
       </div>
       <div className="col-span-3">
