@@ -25,27 +25,28 @@ const SelectedCourseActivity = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 mt-4 w-[80%]">
+    <div className="grid grid-cols-4 mt-4 w-[80%] gap-3">
       <div className="col-span-1">
         <div className="flex flex-col gap-2 items-center">
-          <div className="flex flex-col items-center gap-0.5">
+          <div className="flex flex-col items-center gap-0.5 rounded-md shadow w-full py-4 bg-white">
             <span className="font-bold">Quiz Progress</span>
             <span className="font-light">{selectedAnswersId.length} Question Answered</span>
             <span className="font-light">{questions.length - selectedAnswersId.length} Question Remaning</span>
+            <Button
+              disabled={answersSubmitted || selectedAnswersId.length !== questions.length}
+              onClick={submitAnswers}
+              className={merge(
+                "bg-login",
+                selectedAnswersId.length !== questions.length ? "opacity-50 hover:cursor-not-allowed" : "hover:cursor-pointer"
+              )}
+              label={answersSubmitted ? "Submitted" : "End Quiz"}
+            />
           </div>
-          <Button
-            disabled={answersSubmitted || selectedAnswersId.length !== questions.length}
-            onClick={submitAnswers}
-            className={merge(
-              "bg-login",
-              selectedAnswersId.length !== questions.length ? "opacity-50 hover:cursor-not-allowed" : "hover:cursor-pointer"
-            )}
-            label={answersSubmitted ? "Submitted" : "End Quiz"}
-          />
+
           {answersSubmitted && (
-            <div className="flex flex-col items-center gap-0.5">
+            <div className="flex flex-col items-center gap-0.5 rounded-md shadow w-full py-4 bg-white">
               <span className="font-bold">Quiz Summary</span>
-              <span className="font-light">
+              <span className="font-semibold">
                 Score: {correctAnswers.length} / {questions.length}
               </span>
               <span className="font-light">{correctAnswers.length} Question Correct</span>

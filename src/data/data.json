@@ -14,6 +14,11 @@
     { "postedBy": "Smack  Steward", "forumTitle": "Best Programming Language" },
     { "postedBy": "JJ Peculiar", "forumTitle": "Are Dinosaurs Real?" }
   ],
+  "notices": [
+    { "title": "Walang Pasok", "description": "Classes suspended Oct 27-30 due to typhoon" },
+    { "title": "Semesteral Break", "description": "Upcoming Long Break" },
+    { "title": "Internship Applications", "description": "Please give me internship" }
+  ],
   "courses": [
     {
       "courseId": "course1",
