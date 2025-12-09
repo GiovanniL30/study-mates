@@ -1,6 +1,6 @@
 import { ContentWrapper } from "@/components/ui/Wrapper";
 import Card from "@/components/ui/Card";
-import Input from "@/components/ui/Input-temp";
+import Input from "@/components/ui/Input";
 import ForumDisplay from "@/components/ui/ForumDisplay";
 import NoticeDisplay from "@/components/ui/NoticeDisplay";
 import Table, { type TableHeader } from "@/components/ui/Table";

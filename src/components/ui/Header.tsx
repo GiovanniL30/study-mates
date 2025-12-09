@@ -1,4 +1,4 @@
-import Input from "@/components/ui/Input-temp";
+import Input from "@/components/ui/Input";
 import { useNavigate } from "react-router-dom";
 import { IoMdArrowBack } from "react-icons/io";
 import { CiBellOn } from "react-icons/ci";

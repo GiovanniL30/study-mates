@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import QuestionCard from "@/components/ui/QuestionCard";
 import courses from "@/lib/getCourseData";
 import { type SelectedAnswer } from "@/types/SelectedAnswer";
-import Button from "@/components/ui/Button-temp";
+import Button from "@/components/ui/Button";
 import merge from "@/lib/merge";
 
 const SelectedCourseActivity = () => {

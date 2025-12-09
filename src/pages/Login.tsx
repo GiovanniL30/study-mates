@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import { PageWrapper } from "@/components/ui/Wrapper";
-import Input from "@/components/ui/Input-temp";
-import Button from "@/components/ui/Button-temp";
+import Input from "@/components/ui/Input";
+import Button from "@/components/ui/Button";
 
 const Login = () => {
   const [email, setEmail] = useState<undefined | string>(undefined);
