@@ -6,6 +6,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { RiUserCommunityFill } from "react-icons/ri";
 import { CiChat1 } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
+import { RiLogoutBoxLine } from "react-icons/ri";
 
 const links: SidebarLink[] = [
   {
@@ -33,6 +34,7 @@ const links: SidebarLink[] = [
     url: "/main/settings",
     icon: <CiSettings />,
   },
+  { label: "Logout", url: "/", icon: <RiLogoutBoxLine /> },
 ];
 
 const MainLayout = () => {
@@ -43,7 +45,9 @@ const MainLayout = () => {
       <Sidebar current={currentLocation} className="bg-black w-[300px]" links={links} />
       <div className="flex flex-col gap-2 w-full p-4">
         <Header />
-        <Outlet />
+        <div className="mt-1">
+          <Outlet />
+        </div>
       </div>
     </main>
   );

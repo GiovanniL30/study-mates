@@ -111,8 +111,8 @@ const Dashboard = () => {
         <Card className="col-start-3 col-end-4 row-start-7 row-end-9">
           <div className="flex flex-col gap-2">
             <h1 className="font-semibold">Notice Board</h1>
-            {noticeData.map((notice) => {
-              return <NoticeDisplay title={notice.title} description={notice.description} />;
+            {noticeData.map((notice, i) => {
+              return <NoticeDisplay key={i} title={notice.title} description={notice.description} />;
             })}
           </div>
         </Card>
