@@ -1,0 +1,557 @@
+{
+  "student": [{ "email": "student@slu.edu.ph", "password": "student123" }],
+  "task": [
+    { "no": 1, "task": "Assignment 1", "course": "Course 1", "status": "In Progress" },
+    { "no": 2, "task": "Assignment 2", "course": "Course 2", "status": "Not Started" },
+    { "no": 3, "task": "Assignment 3", "course": "Course 3", "status": "In Progress" }
+  ],
+  "forums": [
+    { "postedBy": "Jane Cooper", "forumTitle": "Do birds fly?" },
+    { "postedBy": "Kristin Watson", "forumTitle": "Help on Math Equation!" },
+    { "postedBy": "Jenny Wilson", "forumTitle": "Chemical Mixture?" },
+    { "postedBy": "Brookly Sim", "forumTitle": "Proper structure on load?" },
+    { "postedBy": "Nicole Wilson", "forumTitle": "RNA and DNA Comparsion" },
+    { "postedBy": "Smack  Steward", "forumTitle": "Best Programming Language" },
+    { "postedBy": "JJ Peculiar", "forumTitle": "Are Dinosaurs Real?" }
+  ],
+  "notices": [
+    { "title": "Walang Pasok", "description": "Classes suspended Oct 27-30 due to typhoon" },
+    { "title": "Semesteral Break", "description": "Upcoming Long Break" },
+    { "title": "Internship Applications", "description": "Please give me internship" }
+  ],
+  "courses": [
+    {
+      "courseId": "course1",
+      "categories": ["Development", "AI"],
+      "title": "Prompt Engineering",
+      "teacher": "Sam Millar",
+      "lessons": [
+        {
+          "lessonId": "lesson1",
+          "lessonDescription": "Introduction to the fundamentals of prompt engineering.",
+          "lessonMaterial": "Learn how prompts work, how models interpret text, and how to craft effective prompts.",
+          "activity": {
+            "activityId": "activity1",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What is the goal of prompt engineering?",
+                "answer": "q1c1",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "To generate more accurate AI responses" },
+                  { "choiceId": "q1c2", "choice": "To increase computer processing power" },
+                  { "choiceId": "q1c3", "choice": "To replace training data" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Which type of prompt gives better results?",
+                "answer": "q2c2",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "Short prompts with no context" },
+                  { "choiceId": "q2c2", "choice": "Clear prompts with detailed context" },
+                  { "choiceId": "q2c3", "choice": "Randomly generated prompts" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "What is an example of a good prompting technique?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Using vague instructions" },
+                  { "choiceId": "q3c2", "choice": "Using unrelated keywords" },
+                  { "choiceId": "q3c3", "choice": "Using step-by-step instructions" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "lessonId": "lesson2",
+          "lessonDescription": "Understanding prompt patterns and structures.",
+          "lessonMaterial": "Learn about templates, role prompting, and instruction-driven prompts.",
+          "activity": {
+            "activityId": "activity2",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What is role prompting?",
+                "answer": "q1c2",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "Asking AI to guess a role" },
+                  { "choiceId": "q1c2", "choice": "Assigning the AI a specific role to guide responses" },
+                  { "choiceId": "q1c3", "choice": "Removing context from prompts" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Why are templates useful?",
+                "answer": "q2c1",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "They provide structure and consistency" },
+                  { "choiceId": "q2c2", "choice": "They prevent AI from answering" },
+                  { "choiceId": "q2c3", "choice": "They reduce output quality" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "Which pattern helps break down tasks?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Random prompting" },
+                  { "choiceId": "q3c2", "choice": "Minimal prompting" },
+                  { "choiceId": "q3c3", "choice": "Step-by-step prompting" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "courseId": "course2",
+      "categories": ["Development", "Programming"],
+      "title": "Laravel Crash Course",
+      "teacher": "Robert Fox",
+      "lessons": [
+        {
+          "lessonId": "lesson1",
+          "lessonDescription": "Basic introduction to Laravel framework.",
+          "lessonMaterial": "Learn what Laravel is, how routing works, and how MVC is implemented.",
+          "activity": {
+            "activityId": "activity1",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What type of framework is Laravel?",
+                "answer": "q1c2",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "JavaScript Framework" },
+                  { "choiceId": "q1c2", "choice": "PHP Framework" },
+                  { "choiceId": "q1c3", "choice": "Python Framework" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "What architecture does Laravel use?",
+                "answer": "q2c1",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "MVC" },
+                  { "choiceId": "q2c2", "choice": "REST Only" },
+                  { "choiceId": "q2c3", "choice": "GraphQL" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "Which command creates a new Laravel project?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "npm create laravel-app" },
+                  { "choiceId": "q3c2", "choice": "php artisan new" },
+                  { "choiceId": "q3c3", "choice": "laravel new projectname" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "lessonId": "lesson2",
+          "lessonDescription": "Understanding Laravel routing.",
+          "lessonMaterial": "Learn how to define routes, use controllers, and handle requests.",
+          "activity": {
+            "activityId": "activity2",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "Where are Laravel routes stored?",
+                "answer": "q1c1",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "In the routes directory" },
+                  { "choiceId": "q1c2", "choice": "In the public folder" },
+                  { "choiceId": "q1c3", "choice": "In the vendor folder" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Which file contains web routes?",
+                "answer": "q2c2",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "api.php" },
+                  { "choiceId": "q2c2", "choice": "web.php" },
+                  { "choiceId": "q2c3", "choice": "console.php" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "How do you create a controller?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "npm run make:controller" },
+                  { "choiceId": "q3c2", "choice": "php new controller" },
+                  { "choiceId": "q3c3", "choice": "php artisan make:controller" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "courseId": "course3",
+      "categories": ["Marketing"],
+      "title": "Marketing Basics",
+      "teacher": "Maria Gosling",
+      "lessons": [
+        {
+          "lessonId": "lesson1",
+          "lessonDescription": "Learn the basics of marketing and customer behavior.",
+          "lessonMaterial": "Covers marketing fundamentals such as the 4Ps and market segmentation.",
+          "activity": {
+            "activityId": "activity1",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What are the 4Ps of marketing?",
+                "answer": "q1c1",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "Product, Price, Place, Promotion" },
+                  { "choiceId": "q1c2", "choice": "Plan, Pay, Promote, Publish" },
+                  { "choiceId": "q1c3", "choice": "People, Pitch, Purchase, Position" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "What is the goal of market segmentation?",
+                "answer": "q2c3",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "To increase product pricing" },
+                  { "choiceId": "q2c2", "choice": "To reduce marketing expenses" },
+                  { "choiceId": "q2c3", "choice": "To target specific groups effectively" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "Which is a common marketing channel?",
+                "answer": "q3c2",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "File storage" },
+                  { "choiceId": "q3c2", "choice": "Social media" },
+                  { "choiceId": "q3c3", "choice": "Antivirus software" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "lessonId": "lesson2",
+          "lessonDescription": "Understanding consumer behavior.",
+          "lessonMaterial": "Learn what motivates customers and how behavior affects buying decisions.",
+          "activity": {
+            "activityId": "activity2",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What influences consumer behavior?",
+                "answer": "q1c2",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "Random guessing" },
+                  { "choiceId": "q1c2", "choice": "Psychological and social factors" },
+                  { "choiceId": "q1c3", "choice": "Weather conditions" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Which factor affects purchasing decisions?",
+                "answer": "q2c1",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "Cultural background" },
+                  { "choiceId": "q2c2", "choice": "Phone battery level" },
+                  { "choiceId": "q2c3", "choice": "Browser theme" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "What helps brands understand customers?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Ignoring feedback" },
+                  { "choiceId": "q3c2", "choice": "Avoiding surveys" },
+                  { "choiceId": "q3c3", "choice": "Market research" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "courseId": "course4",
+      "categories": ["Finance"],
+      "title": "100 Steps to Finance",
+      "teacher": "Jak Roberto",
+      "lessons": [
+        {
+          "lessonId": "lesson1",
+          "lessonDescription": "Learn foundational financial concepts.",
+          "lessonMaterial": "Covers budgeting, saving, and managing financial resources.",
+          "activity": {
+            "activityId": "activity1",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What is the first step in budgeting?",
+                "answer": "q1c1",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "Identifying income and expenses" },
+                  { "choiceId": "q1c2", "choice": "Applying for a loan" },
+                  { "choiceId": "q1c3", "choice": "Investing in stocks" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Why is saving important?",
+                "answer": "q2c2",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "To increase risk" },
+                  { "choiceId": "q2c2", "choice": "To prepare for emergencies" },
+                  { "choiceId": "q2c3", "choice": "To lower your income" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "Which option is a long-term investment?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Fast-food purchases" },
+                  { "choiceId": "q3c2", "choice": "Daily transportation" },
+                  { "choiceId": "q3c3", "choice": "Retirement funds" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "lessonId": "lesson2",
+          "lessonDescription": "Understanding investments.",
+          "lessonMaterial": "Learn about stocks, bonds, and risk management.",
+          "activity": {
+            "activityId": "activity2",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What is a stock?",
+                "answer": "q1c2",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "A type of debt" },
+                  { "choiceId": "q1c2", "choice": "Ownership in a company" },
+                  { "choiceId": "q1c3", "choice": "A government loan" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "What is diversification?",
+                "answer": "q2c3",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "Investing in one asset only" },
+                  { "choiceId": "q2c2", "choice": "Putting money under your bed" },
+                  { "choiceId": "q2c3", "choice": "Spreading investments to reduce risk" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "Which is a safer investment?",
+                "answer": "q3c1",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Government bonds" },
+                  { "choiceId": "q3c2", "choice": "Lottery tickets" },
+                  { "choiceId": "q3c3", "choice": "High-risk crypto coins" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "courseId": "course5",
+      "categories": ["User Design"],
+      "title": "UI vs UX Importance",
+      "teacher": "Kelly McMillan",
+      "lessons": [
+        {
+          "lessonId": "lesson1",
+          "lessonDescription": "Understand the difference between UI and UX.",
+          "lessonMaterial": "Explains UI, UX, and how they work together in product design.",
+          "activity": {
+            "activityId": "activity1",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What does UI stand for?",
+                "answer": "q1c1",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "User Interface" },
+                  { "choiceId": "q1c2", "choice": "Unified Interaction" },
+                  { "choiceId": "q1c3", "choice": "User Integration" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "What is the focus of UX?",
+                "answer": "q2c3",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "Fonts and colors" },
+                  { "choiceId": "q2c2", "choice": "Only animations" },
+                  { "choiceId": "q2c3", "choice": "User experience and usability" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "Which best describes UI design?",
+                "answer": "q3c2",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Code performance" },
+                  { "choiceId": "q3c2", "choice": "Visual layout and aesthetics" },
+                  { "choiceId": "q3c3", "choice": "User psychology" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "lessonId": "lesson2",
+          "lessonDescription": "Principles of good UX design.",
+          "lessonMaterial": "Learn usability, accessibility, and user-centered design principles.",
+          "activity": {
+            "activityId": "activity2",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What is usability?",
+                "answer": "q1c1",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "Ease of use for the user" },
+                  { "choiceId": "q1c2", "choice": "Number of UI colors" },
+                  { "choiceId": "q1c3", "choice": "Animation speed" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Which improves accessibility?",
+                "answer": "q2c2",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "Small text sizes" },
+                  { "choiceId": "q2c2", "choice": "High-contrast colors" },
+                  { "choiceId": "q2c3", "choice": "Fast loading screens" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "What is user-centered design?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Focusing on business only" },
+                  { "choiceId": "q3c2", "choice": "Ignoring user feedback" },
+                  { "choiceId": "q3c3", "choice": "Designing based on user needs" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "courseId": "course6",
+      "categories": ["Data", "Python"],
+      "title": "Data in Modern Society",
+      "teacher": "Rose Cruz",
+      "lessons": [
+        {
+          "lessonId": "lesson1",
+          "lessonDescription": "Learn how data influences modern decision-making.",
+          "lessonMaterial": "Covers data collection, analysis, and ethical usage.",
+          "activity": {
+            "activityId": "activity1",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What is the purpose of data analysis?",
+                "answer": "q1c3",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "To delete unnecessary information" },
+                  { "choiceId": "q1c2", "choice": "To store more data" },
+                  { "choiceId": "q1c3", "choice": "To extract meaningful insights" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Which is an example of data in daily life?",
+                "answer": "q2c2",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "Fiction stories" },
+                  { "choiceId": "q2c2", "choice": "Mobile usage statistics" },
+                  { "choiceId": "q2c3", "choice": "Dream interpretations" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "What is a major risk of modern data usage?",
+                "answer": "q3c1",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Privacy concerns" },
+                  { "choiceId": "q3c2", "choice": "Improved accuracy" },
+                  { "choiceId": "q3c3", "choice": "Faster search results" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "lessonId": "lesson2",
+          "lessonDescription": "Data ethics and privacy.",
+          "lessonMaterial": "Understand responsible data usage, legal frameworks, and user rights.",
+          "activity": {
+            "activityId": "activity2",
+            "questions": [
+              {
+                "questionId": "question1",
+                "question": "What is data privacy?",
+                "answer": "q1c1",
+                "choices": [
+                  { "choiceId": "q1c1", "choice": "Protecting personal information" },
+                  { "choiceId": "q1c2", "choice": "Sharing all user data" },
+                  { "choiceId": "q1c3", "choice": "Ignoring security rules" }
+                ]
+              },
+              {
+                "questionId": "question2",
+                "question": "Which law protects personal data?",
+                "answer": "q2c2",
+                "choices": [
+                  { "choiceId": "q2c1", "choice": "DMCA" },
+                  { "choiceId": "q2c2", "choice": "GDPR" },
+                  { "choiceId": "q2c3", "choice": "Open License Act" }
+                ]
+              },
+              {
+                "questionId": "question3",
+                "question": "What improves data security?",
+                "answer": "q3c3",
+                "choices": [
+                  { "choiceId": "q3c1", "choice": "Weak passwords" },
+                  { "choiceId": "q3c2", "choice": "Public Wi-Fi usage" },
+                  { "choiceId": "q3c3", "choice": "Strong encryption" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
