@@ -1,7 +1,6 @@
-import Sidebar from "@/components/ui/Sidebar";
 import Header from "@/components/ui/Header";
 import { Outlet, useLocation } from "react-router-dom";
-import { type SidebarLink } from "@/components/ui/Sidebar";
+import Sidebar, { type SidebarLink } from "@/components/ui/Sidebar-temp";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa6";
 import { RiUserCommunityFill } from "react-icons/ri";
