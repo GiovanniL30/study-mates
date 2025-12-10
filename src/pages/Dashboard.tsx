@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ContentWrapper } from "@/components/ui/Wrapper";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
@@ -13,8 +14,13 @@ import { FaBook } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa6";
 import { IoIosDocument } from "react-icons/io";
 import dashboard1 from "@/assets/dashboard1.webp";
+import Calendar from "react-calendar";
 
 const Dashboard = () => {
+  const [dateValue, setDateValue] = useState(new Date());
+  const changeDateValue = (nextValue: Date) => {
+    setDateValue(nextValue);
+  };
   const tableData = data.task;
   const forumData = data.forums;
   const noticeData = data.notices;
@@ -38,7 +44,9 @@ const Dashboard = () => {
           </div>
           <img className="rotate-y-180 size-[200px]" src={dashboard1} alt="Guy sitting on chair" />
         </Card>
-        <Card className="col-start-3 col-end-4 row-start-1 row-end-4">Calendar Small Card</Card>
+        <Card className="col-start-3 col-end-4 row-start-1 row-end-3 flex items-center justify-center h-fit">
+          <Calendar className={"text-center text-lg flex flex-col gap-2 font-extralight"} onChange={() => changeDateValue} value={dateValue} />
+        </Card>
         <Card className="col-start-1 col-end-3 row-start-3 row-end-5 flex flex-col gap-2">
           <div className="flex justify-between items-center">
             <h1 className="font-semibold">Assignments</h1>
@@ -46,7 +54,7 @@ const Dashboard = () => {
           </div>
           <Table data={tableData} headers={tableHeaders} />
         </Card>
-        <Card className="col-start-3 col-end-4 row-start-4 row-end-7">Attendance Small Card</Card>
+        <Card className="col-start-3 col-end-4 row-start-3 row-end-6">Attendance Small Card</Card>
         <Card className="col-start-1 col-end-2 row-start-5 row-end-9 flex flex-col gap-2">
           <h1 className="font-semibold">Forums</h1>
           <div className="flex flex-col gap-2">
@@ -110,7 +118,7 @@ const Dashboard = () => {
             </div>
           </div>
         </Card>
-        <Card className="col-start-3 col-end-4 row-start-7 row-end-9">
+        <Card className="col-start-3 col-end-4 row-start-6 row-end-9">
           <div className="flex flex-col gap-2">
             <h1 className="font-semibold">Notice Board</h1>
             {noticeData.map((notice, i) => {

@@ -7,9 +7,9 @@ interface NoticeDisplayProps {
 
 const NoticeDisplay = ({ title, description }: NoticeDisplayProps) => {
   return (
-    <div className="flex gap-2 items-center">
+    <div className="flex gap-2 items-center rounded-md">
       <CiBellOn size={30} />
-      <div className="flex flex-col gap-0.5">
+      <div className="flex flex-col gap">
         <span className="font-semibold">{title}</span>
         <span className="text-xs font-light">{description}</span>
       </div>

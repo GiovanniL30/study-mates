@@ -22,7 +22,9 @@
   "notices": [
     { "title": "Walang Pasok", "description": "Classes suspended Oct 27-30 due to typhoon" },
     { "title": "Semesteral Break", "description": "Upcoming Long Break" },
-    { "title": "Internship Applications", "description": "Please give me internship" }
+    { "title": "Internship Applications", "description": "Please give me internship" },
+    { "title": "No Sleep", "description": "Is it bad for your health?" },
+    { "title": "TOPCIT Examniations", "description": "Goodluck everyone!" }
   ],
   "community": {
     "primary": [
