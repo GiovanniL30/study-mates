@@ -1,5 +1,10 @@
 {
-  "student": [{ "email": "student@slu.edu.ph", "password": "student123" }],
+  "student": [
+    { "email": "student1@slu.edu.ph", "password": "student123" },
+    { "email": "student2@slu.edu.ph", "password": "student123" },
+    { "email": "student3@slu.edu.ph", "password": "student123" },
+    { "email": "student123@slu.edu.ph", "password": "student123" }
+  ],
   "task": [
     { "no": 1, "task": "Assignment 1", "course": "Course 1", "status": "In Progress" },
     { "no": 2, "task": "Assignment 2", "course": "Course 2", "status": "Not Started" },
@@ -17,8 +22,73 @@
   "notices": [
     { "title": "Walang Pasok", "description": "Classes suspended Oct 27-30 due to typhoon" },
     { "title": "Semesteral Break", "description": "Upcoming Long Break" },
-    { "title": "Internship Applications", "description": "Please give me internship" }
+    { "title": "Internship Applications", "description": "Please give me internship" },
+    { "title": "No Sleep", "description": "Is it bad for your health?" },
+    { "title": "TOPCIT Examniations", "description": "Goodluck everyone!" },
+    { "title": "School Transfer", "description": "Only allowed for a certain duration" },
+    { "title": "School Gym", "description": "Now open for a monthly rate of 1k PHP" },
+    { "title": "Public Transport Traffic", "description": "Late afternoon" }
   ],
+  "community": {
+    "primary": [
+      { "title": "Newest and Recent", "description": "Find the latest updates" },
+      { "title": "Leaderboards", "description": "Top Ranking Students" },
+      { "title": "Following", "description": "Check what your classmates are up to" }
+    ],
+    "popular": [
+      { "title": "#webdevelopment", "description": "927 posts with this tag" },
+      { "title": "#internships", "description": "672 posts with this tag" },
+      { "title": "#ai", "description": "897 posts with this tag" },
+      { "title": "#startup", "description": "Trending just now" },
+      { "title": "#employment", "description": "Trending just now" },
+      { "title": "#playtoearn", "description": "284 posts with this tag" }
+    ],
+    "pinned": [
+      { "title": "Dormmates", "description": "Kurt recently shared a post" },
+      { "title": "BillardAI", "description": "Tyler recently posted" },
+      { "title": "#webdevelopment", "description": "927 posts with this tag" },
+      { "title": "#cryptocurreny", "description": "87 posts with this tag" },
+      { "title": "GoGlowConquer", "description": "Kristy tagged you" }
+    ],
+    "post": [
+      {
+        "title": "Blockchain developer best practices on innovation chain",
+        "tags": ["finance", "bitcoin", "crypto"],
+        "author": "Pavel Gvay",
+        "timestamp": "3 weeks ago",
+        "views": "651,324",
+        "likes": "365,545",
+        "comments": "56"
+      },
+      {
+        "title": "OnePay - Online Payment Processing Web App",
+        "tags": ["payment", "webapp", "uikit"],
+        "author": "Mansurul Haque",
+        "timestamp": "1 week ago",
+        "views": "601,066",
+        "likes": "24,753",
+        "comments": "209"
+      },
+      {
+        "title": "Designing User Interfaces",
+        "tags": ["design", "ui", "copy"],
+        "author": "Michal Malewicz",
+        "timestamp": "2 weeks ago",
+        "views": "964,258",
+        "likes": "64,755",
+        "comments": "44"
+      },
+      {
+        "title": "The 4-step SEO framework that led to a 1000% increase in traffic",
+        "tags": ["seo", "blog", "traffic"],
+        "author": "AR Jakir",
+        "timestamp": "3 days ago",
+        "views": "244,564",
+        "likes": "10,290",
+        "comments": "184"
+      }
+    ]
+  },
   "courses": [
     {
       "courseId": "course1",
