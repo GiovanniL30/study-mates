@@ -1,5 +1,5 @@
 import merge from "@/lib/merge";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.webp";
 import { Link } from "react-router-dom";
 import { type Location } from "react-router-dom";
 
