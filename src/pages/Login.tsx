@@ -43,6 +43,7 @@ const Login = () => {
               <span className="text-xs">
                 Please use these credentials | <i>email: student123@slu.edu.ph</i> | <i>password: student123</i>
               </span>
+              <span className="text-xs">If you can't login just type anything in the fields</span>
             </div>
           </div>
         </div>

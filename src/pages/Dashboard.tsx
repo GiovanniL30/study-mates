@@ -54,7 +54,9 @@ const Dashboard = () => {
           </div>
           <Table data={tableData} headers={tableHeaders} />
         </Card>
-        <Card className="col-start-3 col-end-4 row-start-3 row-end-6">Attendance Small Card</Card>
+        <Card className="col-start-3 col-end-4 row-start-3 row-end-6">
+          <h1 className="font-semibold">Attendance</h1>
+        </Card>
         <Card className="col-start-1 col-end-2 row-start-5 row-end-9 flex flex-col gap-2">
           <h1 className="font-semibold">Forums</h1>
           <div className="flex flex-col gap-2">
