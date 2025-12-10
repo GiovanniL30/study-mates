@@ -5,6 +5,7 @@ import courses from "@/lib/getCourseData";
 import { type SelectedAnswer } from "@/types/SelectedAnswer";
 import Button from "@/components/ui/Button";
 import merge from "@/lib/merge";
+import { Link } from "react-router-dom";
 
 const SelectedCourseActivity = () => {
   const [selectedAnswersId, setSelectedAnswersId] = useState<SelectedAnswer[]>([]);
@@ -28,7 +29,7 @@ const SelectedCourseActivity = () => {
     <div className="grid grid-cols-4 mt-4 w-[80%] gap-3">
       <div className="col-span-1">
         <div className="flex flex-col gap-2 items-center">
-          <div className="flex flex-col items-center gap-0.5 rounded-md shadow w-full py-4 bg-white">
+          <div className="flex flex-col items-center gap-2 rounded-md shadow w-full py-4 bg-white">
             <span className="font-bold">Quiz Progress</span>
             <span className="font-light">{selectedAnswersId.length} Question Answered</span>
             <span className="font-light">{questions.length - selectedAnswersId.length} Question Remaning</span>
@@ -44,13 +45,16 @@ const SelectedCourseActivity = () => {
           </div>
 
           {answersSubmitted && (
-            <div className="flex flex-col items-center gap-0.5 rounded-md shadow w-full py-4 bg-white">
+            <div className="flex flex-col items-center gap-2 rounded-md shadow w-full py-4 bg-white">
               <span className="font-bold">Quiz Summary</span>
               <span className="font-semibold">
                 Score: {correctAnswers.length} / {questions.length}
               </span>
               <span className="font-light">{correctAnswers.length} Question Correct</span>
               <span className="font-light">{wrongAnswers.length} Question Incorrect</span>
+              <Link to={"/main/courses"}>
+                <Button className="bg-login" label={"Back to Courses"} />
+              </Link>
             </div>
           )}
         </div>
