@@ -12,6 +12,7 @@ import { FaMedal } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa6";
 import { IoIosDocument } from "react-icons/io";
+import dashboard1 from "@/assets/dashboard1.webp";
 
 const Dashboard = () => {
   const tableData = data.task;
@@ -28,13 +29,14 @@ const Dashboard = () => {
     <ContentWrapper>
       <div className="grid grid-cols-3 grid-rows-8 gap-2">
         <Card className="col-start-1 col-end-3 row-start-1 row-end-3 flex justify-between items-center">
-          <div className="flex flex-col gap-2 w-[50%]">
+          <div className="flex flex-col gap-2 w-[70%]">
             <h1 className="font-semibold text-3xl">Hey Student!</h1>
             <p className="font-extralight">
-              Welcome back! We're here to support you on your learning journey. Dive into your classes and keep progressing towards your goals.
+              Welcome back! We’re excited to have you here and ready to support you on your learning journey. Jump back into your classes, stay
+              motivated, and keep working toward the accomplishments you’re aiming for!
             </p>
           </div>
-          <span>Image Here</span>
+          <img className="rotate-y-180 size-[200px]" src={dashboard1} alt="Guy sitting on chair" />
         </Card>
         <Card className="col-start-3 col-end-4 row-start-1 row-end-4">Calendar Small Card</Card>
         <Card className="col-start-1 col-end-3 row-start-3 row-end-5 flex flex-col gap-2">
