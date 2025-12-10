@@ -24,7 +24,10 @@
     { "title": "Semesteral Break", "description": "Upcoming Long Break" },
     { "title": "Internship Applications", "description": "Please give me internship" },
     { "title": "No Sleep", "description": "Is it bad for your health?" },
-    { "title": "TOPCIT Examniations", "description": "Goodluck everyone!" }
+    { "title": "TOPCIT Examniations", "description": "Goodluck everyone!" },
+    { "title": "School Transfer", "description": "Only allowed for a certain duration" },
+    { "title": "School Gym", "description": "Now open for a monthly rate of 1k PHP" },
+    { "title": "Public Transport Traffic", "description": "Late afternoon" }
   ],
   "community": {
     "primary": [

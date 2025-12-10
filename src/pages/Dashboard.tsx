@@ -15,6 +15,7 @@ import { FaVideo } from "react-icons/fa6";
 import { IoIosDocument } from "react-icons/io";
 import dashboard1 from "@/assets/dashboard1.webp";
 import Calendar from "react-calendar";
+import { FaCircle } from "react-icons/fa";
 
 const Dashboard = () => {
   const [dateValue, setDateValue] = useState(new Date());
@@ -54,8 +55,38 @@ const Dashboard = () => {
           </div>
           <Table data={tableData} headers={tableHeaders} />
         </Card>
-        <Card className="col-start-3 col-end-4 row-start-3 row-end-6">
+        <Card className="col-start-3 col-end-4 row-start-3 row-end-5 flex flex-col gap-6">
           <h1 className="font-semibold">Attendance</h1>
+          <div className="flex flex-col gap-2">
+            <div className="p-2 flex rounded-full">
+              <div className="bg-green-500 w-[76%] text-green-500 rounded-l-full">1</div>
+              <div className="bg-red-500 w-[24%] rounded-r-full"></div>
+            </div>
+            <div className="flex justify-evenly">
+              <div className="flex gap-2 items-center">
+                <FaCircle color="oklch(72.3% 0.219 149.579)" />
+                <span className="text-sm font-light">Present</span>
+              </div>
+              <div className="flex gap-2 items-center">
+                <FaCircle color="fb2c36" />
+                <span className="text-sm font-light">Absent</span>
+              </div>
+            </div>
+            <div className="flex gap-2 justify-evenly text-sm">
+              <span className="text-center text-sm font-light">
+                Total School Days <br />
+                100
+              </span>
+              <span className="text-center text-sm font-light">
+                Present Days <br />
+                76
+              </span>
+              <span className="text-center text-sm font-light">
+                Absent Days <br />
+                24
+              </span>
+            </div>
+          </div>
         </Card>
         <Card className="col-start-1 col-end-2 row-start-5 row-end-9 flex flex-col gap-2">
           <h1 className="font-semibold">Forums</h1>
@@ -73,7 +104,7 @@ const Dashboard = () => {
                 <FaPeopleGroup />
                 <span className="text-2xl font-semibold">80%</span>
               </div>
-              <h2 className="text-sm font-extralight text-gray-400">Attendance</h2>
+              <h2 className="text-sm font-extralight text-gray-400">Friendly</h2>
             </Card>
             <Card className="flex flex-col items-center shadow w-full">
               <div className="flex gap-2 items-center">
@@ -120,7 +151,7 @@ const Dashboard = () => {
             </div>
           </div>
         </Card>
-        <Card className="col-start-3 col-end-4 row-start-6 row-end-9">
+        <Card className="col-start-3 col-end-4 row-start-5 row-end-9">
           <div className="flex flex-col gap-2">
             <h1 className="font-semibold">Notice Board</h1>
             {noticeData.map((notice, i) => {
