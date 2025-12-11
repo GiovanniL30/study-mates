@@ -7,6 +7,7 @@ import { RiUserCommunityFill } from "react-icons/ri";
 import { CiChat1 } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
 import { RiLogoutBoxLine } from "react-icons/ri";
+import ClarityRouteTracker from "@/lib/ClarityRouteTracker";
 
 const links: SidebarLink[] = [
   {
@@ -42,6 +43,7 @@ const MainLayout = () => {
 
   return (
     <main className="flex gap-2 w-full min-h-screen bg-background">
+      <ClarityRouteTracker />
       <Sidebar current={currentLocation} className="bg-black w-[300px]" links={links} />
       <div className="flex flex-col gap-2 w-full p-4">
         <Header />
